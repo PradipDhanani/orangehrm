@@ -16,7 +16,7 @@ public class DashboardTest extends TestBase {
     //login page object created
     LoginPage loginPage = new LoginPage();
 
-    @Test
+    @Test(groups = {"regression","smoke","sanity"})
     public void verifyUserShouldClickOnAdminFeature() {
         //below methods calling from pages package
         loginPage.setUserNameField();
@@ -26,7 +26,7 @@ public class DashboardTest extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"sanity","smoke"})
     public void verifyUserShouldAddEmployeeName() {
         //below methods calling from pages package
         loginPage.setUserNameField();

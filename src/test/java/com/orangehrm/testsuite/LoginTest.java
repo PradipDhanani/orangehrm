@@ -13,7 +13,7 @@ public class LoginTest extends TestBase {
     //object created
     LoginPage loginPage = new LoginPage();
 
-    @Test
+    @Test(groups = {"sanity","smoke"})
     public void verifyUserShouldEnterValidUsername() {
         //below methods calling from pages package
         loginPage.setUserNameField();
